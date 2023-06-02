@@ -18,7 +18,8 @@ module.exports = {
       jsx: true
     },
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
+    project: './tsconfig.json' // TypeScript 项目的路径
   },
   // 2. 加入 prettier 的 eslint 插件
   plugins: ['react', '@typescript-eslint', 'prettier'],
@@ -30,5 +31,10 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/ban-ts-comment': 'error',
     '@typescript-eslint/no-explicit-any': 'warn'
+  },
+  settings: {
+    react: {
+      version: 'detect' // 自动检测 React 版本
+    }
   }
 };
