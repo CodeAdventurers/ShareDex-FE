@@ -5,7 +5,7 @@ import reactRefresh from '@vitejs/plugin-react-refresh';
 import viteEslint from 'vite-plugin-eslint';
 
 // 全局 scss 文件的路径 用 normalizePath 解决 window 下的路径问题
-const variablePath = normalizePath(path.resolve('./src/variable.scss'));
+const variablePath = normalizePath(path.resolve('./src/styles/variable.scss'));
 
 // https://vitejs.dev/config/
 export default defineConfig({
