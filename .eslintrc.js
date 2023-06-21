@@ -30,7 +30,9 @@ module.exports = {
     semi: ['error', 'always'],
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/ban-ts-comment': 'error',
-    '@typescript-eslint/no-explicit-any': 'warn'
+    '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/explicit-function-return-type': 'off'
+    // '@typescript-eslint/promise-function-async': 'off'
   },
   settings: {
     react: {
